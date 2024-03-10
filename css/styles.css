@@ -439,7 +439,6 @@ img {
 	right: 24px;
 	width: 24px;
 	height: 24px;
-	border: none;
 	border-radius: 50%;
 	background-color: #e7e9fc;
 	border: 1px solid rgba(0, 0, 0, 0.1);
@@ -453,13 +452,15 @@ img {
 .modal-btn-close:hover,
 .modal-btn-close:active {
 	background-color: #404bbf;
+	fill: #ffffff;
 	border: none;
 }
 .btn-close-icon {
+	fill: #2e2f42;
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn-close:hover,
-.modal-btn-close:active {
+.modal-btn-close:hover .btn-close-icon,
+.modal-btn-close:focus .btn-close-icon {
 	fill: #ffffff;
 }
 .is-open {
